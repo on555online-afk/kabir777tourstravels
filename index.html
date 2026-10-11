@@ -3,60 +3,75 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KABIR 777 Tours & Travels | Travel Services</title>
-<meta name="description" content="Hajj, Umrah, India tours, international holidays, flight tickets, train and bus booking, hotels, passport and visa assistance.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KABIR 777 Tours & Travels</title>
+<meta name="description" content="Hajj, Umrah, India tours, international holidays, flight tickets, train and bus booking, hotels and travel assistance.">
 <style>
-:root{--navy:#102b46;--gold:#d8ad55;--cream:#fffaf0;--green:#087f5b}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,sans-serif;color:#203047;background:#fff}
-header{background:var(--navy);color:white;padding:17px 5%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
-.logo{font-size:24px;font-weight:bold;color:#f2cf7a}
-.logo small{display:block;font-size:11px;color:white;letter-spacing:2px;margin-top:5px}
-nav{display:flex;gap:15px;flex-wrap:wrap}
+body{margin:0;font-family:Arial,sans-serif;color:#18334e;background:#fff}
+:root{--navy:#102b46;--gold:#e7b94f;--green:#078b57}
+header{background:var(--navy);color:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:800;color:var(--gold)}
+.logo small{display:block;font-size:11px;letter-spacing:3px;color:white;margin-top:4px}
+nav{display:flex;gap:16px;flex-wrap:wrap}
 nav a{color:white;text-decoration:none;font-size:14px}
 nav a:hover{color:var(--gold)}
-.hero{padding:75px 6%;text-align:center;color:white;background:linear-gradient(135deg,#102b46,#176c70)}
-.hero .tag{color:#f5d48b;font-weight:bold;letter-spacing:2px}
-.hero h1{font-size:clamp(32px,6vw,54px);margin:18px 0}
-.hero p{font-size:18px;line-height:1.7;max-width:750px;margin:0 auto 25px}
-.btn{display:inline-block;padding:13px 19px;margin:5px;border-radius:7px;text-decoration:none;font-weight:bold;background:var(--gold);color:#172c40}
+.hero{min-height:400px;padding:65px 6%;display:flex;align-items:center;background:linear-gradient(90deg,rgba(235,247,255,.96),rgba(235,247,255,.78),rgba(10,42,70,.1)),url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:670px}
+.tag{font-weight:bold;color:#986d14;letter-spacing:2px}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.1;margin:15px 0}
+.hero h1 span{color:#b9871c}
+.hero p{font-size:18px;line-height:1.7}
+.btn{display:inline-block;background:var(--gold);color:#102b46;text-decoration:none;padding:13px 18px;border-radius:7px;font-weight:bold;margin:5px 5px 5px 0}
 .btn.green{background:var(--green);color:white}
-section{padding:48px 6%}
-.section-title{text-align:center;margin-bottom:30px}
-.section-title h2{font-size:30px;color:var(--navy);margin-bottom:8px}
-.section-title p{color:#667085;line-height:1.7}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{padding:23px;border:1px solid #e6e8ec;border-radius:13px;background:white;box-shadow:0 5px 18px #102b4610}
-.card .emoji{font-size:35px}
-.card h3{color:var(--navy);margin:12px 0}
-.card p{line-height:1.7;color:#5d6878;font-size:14px}
-.price{font-weight:bold;color:#9b7023;margin:15px 0}
-.card a{display:inline-block;color:var(--green);font-weight:bold;text-decoration:none;margin-top:8px}
-.featured{background:var(--cream)}
-.banner{background:#eaf4f2;text-align:center;padding:35px 6%;border-radius:14px}
+.btn.blue{background:#174d7a;color:white}
+section{padding:45px 5%}
+.heading{text-align:center;margin-bottom:25px}
+.heading small{color:#a77816;font-weight:bold;letter-spacing:1.5px}
+.heading h2{margin:8px 0;color:var(--navy);font-size:clamp(25px,4vw,34px)}
+.heading p{color:#64748b;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{border:1px solid #e4eaf0;border-radius:12px;overflow:hidden;background:white;box-shadow:0 5px 18px #102b4610}
+.card img{width:100%;height:175px;object-fit:cover;display:block}
+.card-body{padding:17px}
+.card h3{margin:5px 0 10px;color:var(--navy)}
+.card p{font-size:14px;line-height:1.6;color:#586779}
+.price{font-weight:bold;color:#986d14;margin:12px 0}
+.card .btn{font-size:13px;padding:10px 13px}
+.destinations{background:#f1f8fd}
+.dest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:13px}
+.dest{border-radius:10px;overflow:hidden;background:white;box-shadow:0 3px 12px #102b4610}
+.dest img{width:100%;height:115px;object-fit:cover;display:block}
+.dest div{padding:10px}
+.dest h3{font-size:15px;margin:0 0 5px}
+.dest p{font-size:12px;color:#667085;line-height:1.5;margin:0}
+.services{background:#eaf5fb}
+.service{background:white;border-radius:10px;padding:18px;border:1px solid #e0eaf1}
+.service .icon{font-size:29px}
+.service h3{font-size:17px;margin:10px 0}
+.service p{font-size:13px;color:#667085;line-height:1.5}
+.service a{color:#087f5b;font-weight:bold;text-decoration:none;font-size:13px}
+.banner{text-align:center;background:#fff8e8;border-radius:14px;padding:32px 18px}
 .banner h2{color:var(--navy)}
-.steps{max-width:800px;margin:auto;line-height:2}
 .contact{background:var(--navy);color:white;text-align:center}
-.contact h2{color:#f5d48b}
-.contact p{line-height:1.8}
-.contact a:not(.btn){color:#f5d48b}
-footer{background:#091c2d;color:#ddd;text-align:center;padding:22px 6%;font-size:13px;line-height:1.8}
+.contact h2{color:var(--gold)}
+.contact a:not(.btn){color:#ffdc84}
+.contact p{line-height:1.8;overflow-wrap:anywhere}
+footer{background:#091b2b;color:#d7e0e9;text-align:center;padding:24px 5%;font-size:13px;line-height:1.8}
 @media(max-width:600px){
 header{justify-content:center;text-align:center}
 nav{justify-content:center}
-.hero{padding:55px 5%}
-section{padding:38px 5%}
+.hero{padding:48px 6%;min-height:390px}
+section{padding:35px 5%}
+.card img{height:190px}
 }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">KABIR 777
-    <small>TOURS & TRAVELS</small>
-  </div>
+  <div class="logo">KABIR 777<small>TOURS & TRAVELS</small></div>
   <nav>
     <a href="#home">Home</a>
     <a href="#packages">Packages</a>
@@ -66,100 +81,108 @@ section{padding:38px 5%}
   </nav>
 </header>
 
-<div class="hero" id="home">
-  <div class="tag">YOUR JOURNEY, OUR CARE</div>
-  <h1>Explore the World with KABIR 777</h1>
-  <p>Discover amazing destinations with travel assistance for Hajj, Umrah, India tours, international holidays, flights, trains, buses and hotels.</p>
-  <a class="btn" href="#packages">Explore Packages</a>
-  <a class="btn green" href="https://wa.me/919826825666?text=Hello%2C%20I%20would%20like%20travel%20information">WhatsApp Us</a>
-</div>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">YOUR JOURNEY, OUR CARE</div>
+    <h1>Explore the World with <span>KABIR 777</span></h1>
+    <p>Hajj & Umrah · India Tours · International Holidays<br>
+    Flight Tickets · Train & Bus Booking · Hotel Reservations</p>
+    <a class="btn" href="#packages">Explore Packages →</a>
+    <a class="btn green" href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20travel%20information">WhatsApp Us →</a>
+  </div>
+</section>
 
 <section id="packages">
-  <div class="section-title">
-    <h2>Our Travel Packages</h2>
-    <p>Tell us your destination, travel dates and budget to receive available options.</p>
+  <div class="heading">
+    <small>OUR TRAVEL PACKAGES</small>
+    <h2>Choose Your Perfect Journey</h2>
+    <p>Explore our travel options and request a quote for your budget.</p>
   </div>
   <div class="grid">
-    <div class="card">
-      <div class="emoji">🕋</div>
-      <h3>Hajj Packages</h3>
-      <p>Enquire about Hajj travel arrangements, accommodation, flights and package details.</p>
-      <div class="price">Contact Us for Current Prices</div>
-      <a href="https://wa.me/919826825666?text=Hello%2C%20I%20want%20information%20about%20Hajj%20packages">Enquire Now →</a>
-    </div>
-    <div class="card">
-      <div class="emoji">🌙</div>
-      <h3>Umrah Packages</h3>
-      <p>Ask about Umrah travel options, hotels, flights and available package arrangements.</p>
-      <div class="price">Contact Us for Current Prices</div>
-      <a href="https://wa.me/919826825666?text=Hello%2C%20I%20want%20information%20about%20Umrah%20packages">Enquire Now →</a>
-    </div>
-    <div class="card">
-      <div class="emoji">🌍</div>
-      <h3>International Tours</h3>
-      <p>Explore international destinations and enquire about travel and accommodation options.</p>
-      <div class="price">Request a Travel Quote</div>
-      <a href="https://wa.me/919826825666?text=Hello%2C%20I%20want%20an%20international%20tour%20quote">Enquire Now →</a>
-    </div>
-    <div class="card">
-      <div class="emoji">❤️</div>
-      <h3>Family & Honeymoon Tours</h3>
-      <p>Plan a family holiday, romantic getaway or group trip according to your budget.</p>
-      <div class="price">Request a Travel Quote</div>
-      <a href="https://wa.me/919826825666?text=Hello%2C%20I%20want%20a%20family%20or%20honeymoon%20tour">Enquire Now →</a>
-    </div>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80" alt="Makkah and Kaaba">
+      <div class="card-body">
+        <h3>Hajj Packages</h3>
+        <p>Enquire about travel arrangements, accommodation and flight options.</p>
+        <div class="price">Request Current Pricing</div>
+        <a class="btn" href="https://wa.me/919826825666?text=Hello%2C%20I%20am%20interested%20in%20Hajj%20packages">Enquire Now →</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80" alt="Mosque in Madinah">
+      <div class="card-body">
+        <h3>Umrah Packages</h3>
+        <p>Ask about available Umrah arrangements, hotels and flights.</p>
+        <div class="price">Request Current Pricing</div>
+        <a class="btn" href="https://wa.me/919826825666?text=Hello%2C%20I%20am%20interested%20in%20Umrah%20packages">Enquire Now →</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80" alt="Paris international destination">
+      <div class="card-body">
+        <h3>International Tours</h3>
+        <p>Discover overseas destinations and request travel options.</p>
+        <div class="price">Request a Travel Quote</div>
+        <a class="btn" href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20an%20international%20tour%20quote">Enquire Now →</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Tropical beach holiday">
+      <div class="card-body">
+        <h3>Family & Honeymoon Tours</h3>
+        <p>Plan a memorable holiday for couples, families and groups.</p>
+        <div class="price">Request a Travel Quote</div>
+        <a class="btn" href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20a%20family%20or%20honeymoon%20tour">Enquire Now →</a>
+      </div>
+    </article>
   </div>
 </section>
 
-<section class="featured" id="india">
-  <div class="section-title">
-    <h2>Popular Destinations in India</h2>
-    <p>Discover mountains, beaches, nature, heritage and memorable holiday destinations.</p>
+<section class="destinations" id="india">
+  <div class="heading">
+    <small>POPULAR DESTINATIONS IN INDIA</small>
+    <h2>Discover Incredible India</h2>
+    <p>Explore beautiful destinations for your next holiday.</p>
   </div>
-  <div class="grid">
-    <div class="card"><div class="emoji">🏔️</div><h3>Kashmir</h3><p>Explore Srinagar, Gulmarg and beautiful mountain scenery.</p><a href="https://wa.me/919826825666?text=Please%20share%20Kashmir%20tour%20options">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">❄️</div><h3>Manali & Shimla</h3><p>Enjoy mountain views, cool weather and family holidays.</p><a href="https://wa.me/919826825666?text=Please%20share%20Manali%20and%20Shimla%20tour%20options">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🌲</div><h3>Mussoorie & Nainital</h3><p>Discover scenic hills, lakes and peaceful getaways.</p><a href="https://wa.me/919826825666?text=Please%20share%20Mussoorie%20and%20Nainital%20tour%20options">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🏖️</div><h3>Goa</h3><p>Plan a beach holiday and explore local attractions.</p><a href="https://wa.me/919826825666?text=Please%20share%20Goa%20tour%20options">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🌴</div><h3>Kerala</h3><p>Experience nature, greenery and beautiful backwaters.</p><a href="https://wa.me/919826825666?text=Please%20share%20Kerala%20tour%20options">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🏰</div><h3>Rajasthan & Agra</h3><p>Explore historic forts, cultural attractions and famous landmarks.</p><a href="https://wa.me/919826825666?text=Please%20share%20Rajasthan%20and%20Agra%20tour%20options">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🙏</div><h3>Religious Tours</h3><p>Enquire about travel options for your preferred religious destination.</p><a href="https://wa.me/919826825666?text=Please%20share%20religious%20tour%20options">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🗺️</div><h3>Other Indian Destinations</h3><p>Tell us your preferred city and travel dates for available options.</p><a href="https://wa.me/919826825666?text=Please%20suggest%20India%20tour%20destinations">Find a Destination →</a></div>
+  <div class="dest-grid">
+    <div class="dest"><img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=500&q=80" alt="Kashmir"><div><h3>Kashmir</h3><p>Srinagar, Gulmarg and more.</p></div></div>
+    <div class="dest"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=500&q=80" alt="Himalayan mountains"><div><h3>Manali & Shimla</h3><p>Mountain views and scenic stays.</p></div></div>
+    <div class="dest"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80" alt="Nature getaway"><div><h3>Mussoorie & Nainital</h3><p>Hills, lakes and peaceful holidays.</p></div></div>
+    <div class="dest"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=500&q=80" alt="Goa beach"><div><h3>Goa</h3><p>Beaches and coastal attractions.</p></div></div>
+    <div class="dest"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=500&q=80" alt="Kerala backwaters"><div><h3>Kerala</h3><p>Greenery and backwaters.</p></div></div>
+    <div class="dest"><img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=500&q=80" alt="Rajasthan heritage"><div><h3>Rajasthan & Agra</h3><p>Heritage and historic landmarks.</p></div></div>
+    <div class="dest"><img src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=500&q=80" alt="Indian architecture"><div><h3>Religious Tours</h3><p>Ask about your preferred destination.</p></div></div>
+    <div class="dest"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80" alt="Mountain destination"><div><h3>Other Destinations</h3><p>Explore more places across India.</p></div></div>
+  </div>
+  <div style="text-align:center;margin-top:25px">
+    <a class="btn green" href="https://wa.me/919826825666?text=Hello%2C%20please%20suggest%20India%20tour%20packages">Ask About India Tours</a>
   </div>
 </section>
 
-<section id="services">
-  <div class="section-title">
-    <h2>Our Travel Services</h2>
-    <p>Choose a service and contact us for details and availability.</p>
+<section class="services" id="services">
+  <div class="heading">
+    <small>OUR TRAVEL SERVICES</small>
+    <h2>Complete Travel Solutions</h2>
+    <p>Get information about your travel needs in one place.</p>
   </div>
   <div class="grid">
-    <div class="card"><div class="emoji">✈️</div><h3>Flight Tickets</h3><p>Enquire about domestic and international flights and fares.</p><a href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20flight%20ticket%20information">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🚆</div><h3>Train Booking</h3><p>Check train schedules, fares and ticket availability through the official portal.</p><a href="https://www.irctc.co.in/" target="_blank" rel="noopener">Visit Official IRCTC →</a></div>
-    <div class="card"><div class="emoji">🚌</div><h3>Bus Booking</h3><p>Enquire about routes, fares, travel dates and available booking options.</p><a href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20bus%20booking%20information">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🏨</div><h3>Hotel Booking</h3><p>Ask about accommodation options based on your destination and budget.</p><a href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20hotel%20booking%20information">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🛂</div><h3>Passport Assistance</h3><p>Find official information about fresh passport applications and renewals.</p><a href="https://www.passportindia.gov.in/" target="_blank" rel="noopener">Official Passport Seva →</a></div>
-    <div class="card"><div class="emoji">🌐</div><h3>Visa Assistance</h3><p>Enquire about destination-specific visa requirements and documentation.</p><a href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20visa%20assistance%20information">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">🚕</div><h3>Airport Transfers</h3><p>Ask about airport pickup, drop-off and local transport arrangements.</p><a href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20airport%20transfer%20information">Enquire Now →</a></div>
-    <div class="card"><div class="emoji">📄</div><h3>Travel Documents & Insurance</h3><p>Enquire about travel insurance and the documents required for your trip.</p><a href="https://wa.me/919826825666?text=Hello%2C%20I%20need%20travel%20document%20information">Enquire Now →</a></div>
+    <div class="service"><div class="icon">✈️</div><h3>Flight Tickets</h3><p>Domestic and international flight enquiries.</p><a href="https://wa.me/919826825666?text=I%20need%20flight%20ticket%20information">Enquire →</a></div>
+    <div class="service"><div class="icon">🚆</div><h3>Train Booking</h3><p>Check schedules and ticket availability.</p><a href="https://www.irctc.co.in/" target="_blank" rel="noopener">Official IRCTC →</a></div>
+    <div class="service"><div class="icon">🚌</div><h3>Bus Booking</h3><p>Enquire about routes and bus services.</p><a href="https://wa.me/919826825666?text=I%20need%20bus%20booking%20information">Enquire →</a></div>
+    <div class="service"><div class="icon">🏨</div><h3>Hotel Booking</h3><p>Ask about accommodation options.</p><a href="https://wa.me/919826825666?text=I%20need%20hotel%20booking%20information">Enquire →</a></div>
+    <div class="service"><div class="icon">🛂</div><h3>Passport Assistance</h3><p>Information about new passports and renewals.</p><a href="https://www.passportindia.gov.in/" target="_blank" rel="noopener">Passport Seva →</a></div>
+    <div class="service"><div class="icon">🌐</div><h3>Visa Assistance</h3><p>Enquire about destination-specific documents.</p><a href="https://wa.me/919826825666?text=I%20need%20visa%20assistance%20information">Enquire →</a></div>
+    <div class="service"><div class="icon">🚕</div><h3>Airport Transfers</h3><p>Ask about airport pickup and drop-off.</p><a href="https://wa.me/919826825666?text=I%20need%20airport%20transfer%20information">Enquire →</a></div>
+    <div class="service"><div class="icon">🛡️</div><h3>Travel Insurance</h3><p>Enquire about travel insurance options.</p><a href="https://wa.me/919826825666?text=I%20need%20travel%20insurance%20information">Enquire →</a></div>
   </div>
 </section>
 
 <section>
   <div class="banner">
-    <h2>Plan Your Next Journey Today</h2>
-    <p>Share your destination, travel dates, number of travellers and budget.</p>
+    <h2>Ready for Your Next Journey?</h2>
+    <p>Tell us your destination, travel dates, number of travellers and budget.</p>
     <a class="btn green" href="https://wa.me/919826825666?text=Hello%2C%20please%20send%20me%20a%20travel%20quotation">Get a Travel Quote</a>
-  </div>
-</section>
-
-<section>
-  <div class="section-title"><h2>How to Enquire</h2></div>
-  <div class="steps">
-    <p><strong>1.</strong> Choose your destination or required travel service.</p>
-    <p><strong>2.</strong> Send your travel dates, destination and number of travellers through WhatsApp or email.</p>
-    <p><strong>3.</strong> Confirm prices, availability and service conditions before making payment.</p>
-    <p><strong>4.</strong> Proceed only after the booking details and payment terms are confirmed.</p>
+    <a class="btn blue" href="mailto:on555.online@gmail.com?subject=Travel%20Enquiry">Email Us</a>
   </div>
 </section>
 
@@ -175,8 +198,8 @@ section{padding:38px 5%}
   <strong>KABIR 777 TOURS & TRAVELS</strong><br>
   Your Journey, Our Care.<br>
   Email: on555.online@gmail.com<br>
-  All prices, schedules, package inclusions and availability must be confirmed before booking.<br>
-  Visa decisions are made by the relevant government authorities. Hajj and Umrah arrangements are subject to applicable regulations and authorization.
+  Prices, availability and package details must be confirmed before booking.<br>
+  Visa decisions are made by the relevant authorities. Hajj and Umrah arrangements are subject to applicable regulations and authorization.
 </footer>
 
 </body>
